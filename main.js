@@ -13,5 +13,6 @@ var cognomeUtente = prompt('Ciao! Qual è il tuo cognome?');
 cognomi.push(cognomeUtente);
 
 for (var i = 0; i < cognomi.length; i++) {
+  cognomi.sort();
   console.log(cognomi[i]);
 }
