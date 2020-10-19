@@ -12,7 +12,16 @@ var cognomeUtente = prompt('Ciao! Qual è il tuo cognome?');
 // Inserisco il cognome dell'utente nell'array
 cognomi.push(cognomeUtente);
 
+// Metto in ordine alfabetico i cognomi
+cognomi.sort();
+
+
 for (var i = 0; i < cognomi.length; i++) {
-  cognomi.sort();
+
   console.log(cognomi[i]);
+
 }
+
+var posizione = cognomi.indexOf(cognomeUtente);
+
+console.log('Il tuo cognome è in posizione n. ' + posizione);
